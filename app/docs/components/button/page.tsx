@@ -20,33 +20,33 @@ export default function ButtonPage() {
       <div className="flex">
         <DocsSidebar />
         
-        <div className="flex-1 p-8">
-          <div className="max-w-4xl">
+        <div className="flex-1 lg:ml-0 p-4 sm:p-6 lg:p-8">
+          <div className="max-w-4xl mx-auto">
             {/* Header */}
-            <div className="mb-12">
-              <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 font-sans uppercase">
-                <span className="bg-retro-2 px-4 py-2 border-4 border-black transform rotate-1 inline-block shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <div className="mb-8 lg:mb-12 mt-16 lg:mt-0">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 lg:mb-6 font-sans uppercase">
+                <span className="bg-retro-2 px-2 sm:px-4 py-1 sm:py-2 border-2 sm:border-4 border-black transform rotate-1 inline-block shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                   Button
                 </span>
               </h1>
-              <p className="text-xl text-black max-w-3xl">
+              <p className="text-lg sm:text-xl text-black max-w-3xl">
                 A customizable button component with Memphis-inspired design featuring multiple variants, shapes, and shadow colors.
               </p>
             </div>
 
             {/* Installation Methods */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase">
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase">
                 Installation
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-retro-8 p-6 border-4 border-black rounded-lg">
-                  <h3 className="font-bold text-black mb-3 flex items-center">
-                    <Terminal className="w-5 h-5 mr-2" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
+                <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
+                    <Terminal className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     shadcn CLI (Recommended)
                   </h3>
-                  <p className="text-black text-sm mb-4">
+                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
                     Install the Button component using the shadcn CLI:
                   </p>
                   <CodeBlock
@@ -55,36 +55,36 @@ export default function ButtonPage() {
                   />
                 </div>
 
-                <div className="bg-retro-8 p-6 border-4 border-black rounded-lg">
-                  <h3 className="font-bold text-black mb-3 flex items-center">
-                    <Copy className="w-5 h-5 mr-2" />
+                <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
+                    <Copy className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Manual Installation
                   </h3>
-                  <p className="text-black text-sm mb-4">
+                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
                     Copy and paste the component code into your project:
                   </p>
                   <Link href="#manual-installation">
-                    <Button size="sm" variant="outline">
+                    <Button size="sm" variant="outline" className="w-full sm:w-auto">
                       View Code Below
                     </Button>
                   </Link>
                 </div>
               </div>
 
-              <div className="bg-retro-11 p-4 border-2 border-black rounded">
-                <p className="text-black text-sm">
+              <div className="bg-retro-11 p-3 sm:p-4 border-2 border-black rounded">
+                <p className="text-black text-xs sm:text-sm">
                   <strong>Prerequisites:</strong> Make sure you have completed the <Link href="/docs/installation" className="underline font-bold">installation setup</Link> before adding components.
                 </p>
               </div>
             </div>
 
             {/* Usage Example */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase">
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase">
                 Usage
               </h2>
               
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <CodeBlock
                   title="Import the component"
                   code={`import { Button } from "@/components/memphi/button"
@@ -101,15 +101,15 @@ export default function Example() {
             </div>
 
             {/* Examples with Tabs */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-3xl font-bold text-black font-sans uppercase">
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-6 gap-3 sm:gap-0">
+                <h2 className="text-2xl sm:text-3xl font-bold text-black font-sans uppercase">
                   Examples
                 </h2>
                 <div className="flex bg-retro-8 border-2 border-black rounded-lg overflow-hidden">
                   <button
                     onClick={() => setActiveTab("preview")}
-                    className={`px-4 py-2 font-medium transition-colors ${
+                    className={`px-3 sm:px-4 py-2 font-medium transition-colors text-sm sm:text-base ${
                       activeTab === "preview"
                         ? "bg-black text-white"
                         : "text-black hover:bg-retro-1"
@@ -119,7 +119,7 @@ export default function Example() {
                   </button>
                   <button
                     onClick={() => setActiveTab("code")}
-                    className={`px-4 py-2 font-medium transition-colors ${
+                    className={`px-3 sm:px-4 py-2 font-medium transition-colors text-sm sm:text-base ${
                       activeTab === "code"
                         ? "bg-black text-white"
                         : "text-black hover:bg-retro-1"
@@ -131,21 +131,21 @@ export default function Example() {
               </div>
 
               {/* Variants */}
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-black mb-4 font-sans">Variants</h3>
+              <div className="mb-6 lg:mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-black mb-3 sm:mb-4 font-sans">Variants</h3>
                 {activeTab === "preview" ? (
-                  <div className="bg-retro-8 p-6 border-4 border-black rounded-lg">
-                    <div className="flex flex-wrap gap-4 justify-center">
-                      <Button>Default</Button>
-                      <Button variant="destructive">Destructive</Button>
-                      <Button variant="outline">Outline</Button>
-                      <Button variant="secondary">Secondary</Button>
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="link">Link</Button>
+                  <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                    <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
+                      <Button size="sm" className="text-xs sm:text-sm">Default</Button>
+                      <Button variant="destructive" size="sm" className="text-xs sm:text-sm">Destructive</Button>
+                      <Button variant="outline" size="sm" className="text-xs sm:text-sm">Outline</Button>
+                      <Button variant="secondary" size="sm" className="text-xs sm:text-sm">Secondary</Button>
+                      <Button variant="ghost" size="sm" className="text-xs sm:text-sm">Ghost</Button>
+                      <Button variant="link" size="sm" className="text-xs sm:text-sm">Link</Button>
                     </div>
                   </div>
                 ) : (
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     <CodeBlock
                       title="Variants Example"
                       code={`<Button>Default</Button>
@@ -164,18 +164,18 @@ export default function Example() {
               </div>
 
               {/* Shapes */}
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-black mb-4 font-sans">Shapes</h3>
+              <div className="mb-6 lg:mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-black mb-3 sm:mb-4 font-sans">Shapes</h3>
                 {activeTab === "preview" ? (
-                  <div className="bg-retro-8 p-6 border-4 border-black rounded-lg">
-                    <div className="flex flex-wrap gap-4 justify-center">
-                      <Button shape="oval">Oval (Default)</Button>
-                      <Button shape="rectangle">Rectangle</Button>
-                      <Button shape="rectangle" variant="destructive">Rectangle Destructive</Button>
+                  <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                    <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
+                      <Button shape="oval" size="sm" className="text-xs sm:text-sm">Oval (Default)</Button>
+                      <Button shape="rectangle" size="sm" className="text-xs sm:text-sm">Rectangle</Button>
+                      <Button shape="rectangle" variant="destructive" size="sm" className="text-xs sm:text-sm">Rectangle Destructive</Button>
                     </div>
                   </div>
                 ) : (
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     <CodeBlock
                       title="Shapes Example"
                       code={`<Button shape="oval">Oval (Default)</Button>

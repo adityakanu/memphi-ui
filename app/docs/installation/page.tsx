@@ -13,30 +13,30 @@ export default function InstallationPage() {
       <div className="flex">
         <DocsSidebar />
         
-        <div className="flex-1 p-8">
-          <div className="max-w-4xl">
+        <div className="flex-1 lg:ml-0 p-4 sm:p-6 lg:p-8">
+          <div className="max-w-4xl mx-auto">
             {/* Header */}
-            <div className="mb-12">
-              <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 font-sans uppercase">
-                <span className="bg-retro-6 text-white px-4 py-2 border-4 border-black transform -rotate-1 inline-block shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <div className="mb-8 lg:mb-12 mt-16 lg:mt-0">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 lg:mb-6 font-sans uppercase">
+                <span className="bg-retro-6 text-white px-2 sm:px-4 py-1 sm:py-2 border-2 sm:border-4 border-black transform -rotate-1 inline-block shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] sm:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                   Installation
                 </span>
               </h1>
-              <p className="text-xl text-black max-w-3xl">
+              <p className="text-lg sm:text-xl text-black max-w-3xl">
                 Memphi UI ❤️ Next.js. Get started in minutes with our step-by-step installation guide.
               </p>
             </div>
 
             {/* Step 1: Create Project */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase flex items-center">
-                <div className="w-8 h-8 bg-retro-1 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">1</span>
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase flex items-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-retro-1 border-2 border-black rounded-full mr-2 sm:mr-3 flex items-center justify-center">
+                  <span className="text-black font-bold text-xs sm:text-sm">1</span>
                 </div>
                 Create Project
               </h2>
               
-              <p className="text-black mb-6">
+              <p className="text-black mb-4 sm:mb-6 text-sm sm:text-base">
                 Run the init command to create a new Next.js project or to setup an existing one:
               </p>
 
@@ -45,21 +45,21 @@ export default function InstallationPage() {
                 code="npx create-next-app@latest my-memphi-app --typescript --tailwind --eslint --app"
               />
 
-              <p className="text-black mt-4 text-sm">
+              <p className="text-black mt-3 sm:mt-4 text-xs sm:text-sm">
                 This creates a new Next.js project with TypeScript and Tailwind CSS configured.
               </p>
             </div>
 
             {/* Step 2: Install Dependencies */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase flex items-center">
-                <div className="w-8 h-8 bg-retro-2 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">2</span>
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase flex items-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-retro-2 border-2 border-black rounded-full mr-2 sm:mr-3 flex items-center justify-center">
+                  <span className="text-black font-bold text-xs sm:text-sm">2</span>
                 </div>
                 Install Dependencies
               </h2>
               
-              <p className="text-black mb-6">
+              <p className="text-black mb-4 sm:mb-6 text-sm sm:text-base">
                 Install the required dependencies for Memphi UI components:
               </p>
 
@@ -68,28 +68,28 @@ export default function InstallationPage() {
                 code="npm install @radix-ui/react-slot class-variance-authority clsx tailwind-merge"
               />
 
-              <div className="mt-6 bg-retro-8 p-4 border-2 border-black rounded">
-                <p className="text-black text-sm">
+              <div className="mt-4 sm:mt-6 bg-retro-8 p-3 sm:p-4 border-2 border-black rounded">
+                <p className="text-black text-xs sm:text-sm">
                   <strong>What these packages do:</strong><br/>
-                  • <code className="bg-white px-1 border border-black rounded">@radix-ui/react-slot</code> - Accessible component composition<br/>
-                  • <code className="bg-white px-1 border border-black rounded">class-variance-authority</code> - Type-safe component variants<br/>
-                  • <code className="bg-white px-1 border border-black rounded">clsx</code> - Conditional class names<br/>
-                  • <code className="bg-white px-1 border border-black rounded">tailwind-merge</code> - Merge Tailwind classes safely
+                  • <code className="bg-white px-1 border border-black rounded text-xs">@radix-ui/react-slot</code> - Accessible component composition<br/>
+                  • <code className="bg-white px-1 border border-black rounded text-xs">class-variance-authority</code> - Type-safe component variants<br/>
+                  • <code className="bg-white px-1 border border-black rounded text-xs">clsx</code> - Conditional class names<br/>
+                  • <code className="bg-white px-1 border border-black rounded text-xs">tailwind-merge</code> - Merge Tailwind classes safely
                 </p>
               </div>
             </div>
 
             {/* Step 3: Add Utilities */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase flex items-center">
-                <div className="w-8 h-8 bg-retro-9 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">3</span>
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase flex items-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-retro-9 border-2 border-black rounded-full mr-2 sm:mr-3 flex items-center justify-center">
+                  <span className="text-black font-bold text-xs sm:text-sm">3</span>
                 </div>
                 Add Utilities
               </h2>
               
-              <p className="text-black mb-6">
-                Create the utility function for merging classes. Add this to <code className="bg-retro-8 px-2 py-1 border border-black rounded">lib/utils.ts</code>:
+              <p className="text-black mb-4 sm:mb-6 text-sm sm:text-base">
+                Create the utility function for merging classes. Add this to <code className="bg-retro-8 px-2 py-1 border border-black rounded text-xs sm:text-sm">lib/utils.ts</code>:
               </p>
 
               <CodeBlock
@@ -104,16 +104,16 @@ export function cn(...inputs: ClassValue[]) {
             </div>
 
             {/* Step 4: Configure Theme */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase flex items-center">
-                <div className="w-8 h-8 bg-retro-7 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">4</span>
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase flex items-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-retro-7 border-2 border-black rounded-full mr-2 sm:mr-3 flex items-center justify-center">
+                  <span className="text-black font-bold text-xs sm:text-sm">4</span>
                 </div>
                 Add Theme
               </h2>
               
-              <p className="text-black mb-6">
-                Add Memphi UI colors to your Tailwind configuration. Update your <code className="bg-retro-8 px-2 py-1 border border-black rounded">globals.css</code>:
+              <p className="text-black mb-4 sm:mb-6 text-sm sm:text-base">
+                Add Memphi UI colors to your Tailwind configuration. Update your <code className="bg-retro-8 px-2 py-1 border border-black rounded text-xs sm:text-sm">globals.css</code>:
               </p>
 
               <CodeBlock
@@ -244,15 +244,15 @@ export function cn(...inputs: ClassValue[]) {
             </div>
 
             {/* Step 5: Add Fonts (Optional) */}
-            <div className="bg-white border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase flex items-center">
-                <div className="w-8 h-8 bg-retro-10 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">5</span>
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase flex items-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-retro-10 border-2 border-black rounded-full mr-2 sm:mr-3 flex items-center justify-center">
+                  <span className="text-black font-bold text-xs sm:text-sm">5</span>
                 </div>
                 Add Fonts (Optional)
               </h2>
               
-              <p className="text-black mb-6">
+              <p className="text-black mb-4 sm:mb-6 text-sm sm:text-base">
                 We use <strong>Comic Neue</strong> for that playful Memphis feel. Add it to your layout:
               </p>
 
@@ -283,8 +283,8 @@ export default function RootLayout({
 }`}
               />
 
-              <div className="mt-6">
-                <p className="text-black mb-4">Then update your Tailwind config to use the font:</p>
+              <div className="mt-4 sm:mt-6">
+                <p className="text-black mb-3 sm:mb-4 text-sm sm:text-base">Then update your Tailwind config to use the font:</p>
                 <CodeBlock
                   title="tailwind.config.js (add to theme.extend)"
                   code={`fontFamily: {
@@ -295,51 +295,51 @@ export default function RootLayout({
             </div>
 
             {/* Step 6: That's it! */}
-            <div className="bg-retro-11 border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-8">
-              <h2 className="text-3xl font-bold text-black mb-6 font-sans uppercase flex items-center">
-                <div className="w-8 h-8 bg-retro-5 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">✓</span>
+            <div className="bg-retro-11 border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase flex items-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-retro-5 border-2 border-black rounded-full mr-2 sm:mr-3 flex items-center justify-center">
+                  <span className="text-black font-bold text-xs sm:text-sm">✓</span>
                 </div>
                 That&apos;s it! 🚀
               </h2>
               
-              <p className="text-black mb-6 text-lg">
+              <p className="text-black mb-4 sm:mb-6 text-base sm:text-lg">
                 Now you can start using Memphi UI components in your project. 
                 You can install them manually by copying the code.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-white p-6 border-4 border-black rounded-lg">
-                  <h3 className="font-bold text-black mb-3 flex items-center">
-                    <Terminal className="w-5 h-5 mr-2" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
+                <div className="bg-white p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
+                    <Terminal className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Manual Installation
                   </h3>
-                  <p className="text-black text-sm mb-4">
+                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
                     Copy the component code from our documentation and paste it into your project.
                   </p>
                   <Link href="/docs/components/button">
-                    <Button size="sm" shadowColor="oklch(0.7 0.2 27.3)">
+                    <Button size="sm" shadowColor="oklch(0.7 0.2 27.3)" className="w-full sm:w-auto">
                       View Components
                     </Button>
                   </Link>
                 </div>
 
-                <div className="bg-white p-6 border-4 border-black rounded-lg">
-                  <h3 className="font-bold text-black mb-3 flex items-center">
-                    <Package className="w-5 h-5 mr-2" />
+                <div className="bg-white p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
+                    <Package className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     shadcn CLI (Coming Soon)
                   </h3>
-                  <p className="text-black text-sm mb-4">
+                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
                     Install components directly via the shadcn CLI for even faster setup.
                   </p>
-                  <Button size="sm" variant="outline" disabled>
+                  <Button size="sm" variant="outline" disabled className="w-full sm:w-auto">
                     Coming Soon
                   </Button>
                 </div>
               </div>
 
-              <div className="bg-white p-4 border-2 border-black rounded">
-                <h4 className="font-bold text-black mb-2">Example Usage:</h4>
+              <div className="bg-white p-3 sm:p-4 border-2 border-black rounded">
+                <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Example Usage:</h4>
                 <CodeBlock
                   title="Example Component"
                   code={`import { Button } from "@/components/memphi/button"
@@ -360,24 +360,24 @@ export default function MyPage() {
 
             {/* Next Steps */}
             <div className="text-center">
-              <div className="bg-retro-2 border-4 border-black p-8 rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-                <h2 className="text-3xl font-bold text-black mb-4 font-sans uppercase">
+              <div className="bg-retro-2 border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                <h2 className="text-2xl sm:text-3xl font-bold text-black mb-3 sm:mb-4 font-sans uppercase">
                   What&apos;s Next?
                 </h2>
-                <p className="text-black text-lg mb-6">
+                <p className="text-black text-base sm:text-lg mb-4 sm:mb-6">
                   Explore our components and start building amazing interfaces with Memphis flair!
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   <Link href="/docs/components/button">
-                    <Button size="lg" shadowColor="oklch(0.7 0.2 27.3)">
+                    <Button size="lg" shadowColor="oklch(0.7 0.2 27.3)" className="w-full sm:w-auto">
                       Explore Components
-                      <ArrowRight className="w-5 h-5 ml-2" />
+                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                     </Button>
                   </Link>
                   <Link href="/examples">
-                    <Button variant="outline" size="lg" shadowColor="oklch(0.6 0.2 240)">
+                    <Button variant="outline" size="lg" shadowColor="oklch(0.6 0.2 240)" className="w-full sm:w-auto">
                       View Examples
-                      <Palette className="w-5 h-5 ml-2" />
+                      <Palette className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                     </Button>
                   </Link>
                 </div>
