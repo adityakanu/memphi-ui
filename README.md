@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Memphi UI Design System
 
-First, run the development server:
+**Memphi UI** is a playful, retro‑meets‑neo‑brutalist React component library built on top of [shadcn/ui](https://github.com/shadcn/ui), Radix primitives, and Tailwind v4’s CSS‑first theming. Drop it into any Next.js or React project via the shadcn CLI, and you’re live in seconds.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Features
+
+- **Memphis‑inspired** blobs, doodles & bright OKLCH colors  
+- **Neo‑brutalist** shadows & bold borders  
+- **Tailwind v4 CSS‑first** theming—no JS config merges required  
+- **shadcn CLI support** (`npx shadcn add @memphi/ui`)  
+- **TypeScript‑typed**, accessible, headless primitives under the hood  
+- **One‑click “Open in v0.dev”** links in docs  
+
+---
+
+## 📁 Repository Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+memphi-ui/
+├── app/
+│   └── globals.css       # Tailwind CSS-first theming
+├── components/
+│   └── memphi/       # Core Memphi UI package (exports components)
+├── scripts/
+│   └── build-registry.js  # (optional) JSON registry generator
+├── README.md
+├── components.json   # shadcn CLI config
+├── next.config.js    # Next.js config
+├── package.json      # Turbo monorepo + scripts
+└── turbo.json        # Turborepo pipeline config
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- **Node.js** ≥ 18  
+- **npm** (or **pnpm** / **Yarn** with workspaces)  
+- **shadcn CLI** installed globally or via npx:  
+  ```bash
+  npm install -g @shadcn/cli
+  # or
+  npx shadcn@latest --help
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚡ Quickstart
 
-## Deploy on Vercel
+**Add Memphi UI to your project**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In your Next.js or React app:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npx shadcn add https://ui.memphi.dev/r/memphi-button.json
+   ```
+
+
+
+**Use a component**
+
+   ```tsx
+   import { Button } from "components/memphi/button";
+
+   export default function Page() {
+     return <Button shape="rectangle" variant="destructive">Destructive</Button>;
+   }
+   ```
+
+
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create a branch: `git checkout -b feat/YourComponent`
+3. Add your component under `components/memphi`
+4. (Optional) Update registry script or JSON in `public/r/`
+5. Send a PR!
+
+We welcome bug fixes, new components, variant improvements, and docs enhancements.
+
+---
+
+## 📜 License
+
+Released under the **MIT License**.
+See [LICENSE](LICENSE) for details.
+
+---
+
+Made with 🎉 in India by Aditya — bring your UIs to life with a playful retro‑neo‑brutalist twist!
