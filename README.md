@@ -37,7 +37,7 @@ export function cn(...inputs: ClassValue[]) {
 
 ### 3. Configure Tailwind CSS
 
-Add these colors to your `tailwind.config.js`:
+Add these colors to your `globals.css`:
 
 ```javascript
 @theme inline {
