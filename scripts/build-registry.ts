@@ -6,7 +6,7 @@ import { registryComponents } from "../registry";
 
 const REGISTRY_BASE_PATH = "registry";
 const PUBLIC_FOLDER_BASE_PATH = "public/r";
-const COMPONENT_FOLDER_PATH = "components";
+const COMPONENT_FOLDER_PATH = "components/memphi";
 
 type File = z.infer<typeof registryItemFileSchema>;
 const FolderToComponentTypeMap = {
