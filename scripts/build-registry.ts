@@ -43,7 +43,7 @@ const getComponentFiles = async (files: File[]) => {
         ],
         content: fileContent,
         path: file,
-        target: `${COMPONENT_FOLDER_PATH}/${file}`.replace("../components/", ""),
+        target: `${COMPONENT_FOLDER_PATH}/${file}`,
       };
     }
   });
