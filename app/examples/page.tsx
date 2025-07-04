@@ -1,6 +1,31 @@
 import { Button } from "@/components/memphi/button";
 import { Navigation } from "@/components/ui/navigation";
 import { Download, Heart, Pause, Play, Settings, Share2, ShoppingCart, Star, User } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Examples",
+  description: "See Memphi UI components in action with real-world examples. Hero sections, product cards, dashboards, and more using Memphis design principles.",
+  openGraph: {
+    title: "Memphi UI Examples",
+    description: "See Memphi UI components in action with real-world examples. Hero sections, product cards, dashboards, and more using Memphis design principles.",
+    url: "https://memphi.dev/examples",
+    images: [
+      {
+        url: "/memphi.webp",
+        width: 1200,
+        height: 630,
+        alt: "Memphi UI Examples",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Memphi UI Examples",
+    description: "See Memphi UI components in action with real-world examples. Hero sections, product cards, dashboards, and more using Memphis design principles.",
+    images: ["/memphi.webp"],
+  },
+};
 
 export default function ExamplesPage() {
   return (

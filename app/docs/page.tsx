@@ -2,7 +2,32 @@ import { Button } from "@/components/memphi/button";
 import { DocsSidebar } from "@/components/ui/docs-sidebar";
 import { Navigation } from "@/components/ui/navigation";
 import { ArrowRight, Heart, Sparkles, Zap } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Documentation",
+  description: "Learn about Memphi UI - a React component library inspired by Memphis design and NeoBrutalism. Discover the design philosophy, features, and how to get started.",
+  openGraph: {
+    title: "Memphi UI Documentation - Memphis Design meets NeoBrutalism",
+    description: "Learn about Memphi UI - a React component library inspired by Memphis design and NeoBrutalism. Discover the design philosophy, features, and how to get started.",
+    url: "https://memphi.dev/docs",
+    images: [
+      {
+        url: "/memphi.webp",
+        width: 1200,
+        height: 630,
+        alt: "Memphi UI Documentation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Memphi UI Documentation - Memphis Design meets NeoBrutalism",
+    description: "Learn about Memphi UI - a React component library inspired by Memphis design and NeoBrutalism. Discover the design philosophy, features, and how to get started.",
+    images: ["/memphi.webp"],
+  },
+};
 
 export default function DocsPage() {
   return (

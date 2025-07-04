@@ -3,7 +3,32 @@ import { CodeBlock } from "@/components/ui/code-block";
 import { DocsSidebar } from "@/components/ui/docs-sidebar";
 import { Navigation } from "@/components/ui/navigation";
 import { ArrowRight, Package, Palette, Terminal } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Installation",
+  description: "Learn how to install and set up Memphi UI in your Next.js project. Step-by-step guide with dependencies, configuration, and theme setup.",
+  openGraph: {
+    title: "Memphi UI Installation Guide",
+    description: "Learn how to install and set up Memphi UI in your Next.js project. Step-by-step guide with dependencies, configuration, and theme setup.",
+    url: "https://memphi.dev/docs/installation",
+    images: [
+      {
+        url: "/memphi.webp",
+        width: 1200,
+        height: 630,
+        alt: "Memphi UI Installation Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Memphi UI Installation Guide",
+    description: "Learn how to install and set up Memphi UI in your Next.js project. Step-by-step guide with dependencies, configuration, and theme setup.",
+    images: ["/memphi.webp"],
+  },
+};
 
 export default function InstallationPage() {
   return (

@@ -2,7 +2,32 @@ import { Button } from "@/components/memphi/button";
 import { Footer } from "@/components/ui/footer";
 import { Navigation } from "@/components/ui/navigation";
 import { ArrowRight, Copy, Heart, Sparkles, Zap } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Memphi UI - Where Memphis design meets NeoBrutalism. A React component library with bold, playful, and accessible components for modern web applications.",
+  openGraph: {
+    title: "Memphi UI - Memphis Design meets NeoBrutalism",
+    description: "A React component library inspired by Memphis design and NeoBrutalism. Bold, playful, and accessible components for modern web applications.",
+    url: "https://memphi.dev",
+    images: [
+      {
+        url: "/memphi.webp",
+        width: 1200,
+        height: 630,
+        alt: "Memphi UI - Memphis Design meets NeoBrutalism",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Memphi UI - Memphis Design meets NeoBrutalism",
+    description: "A React component library inspired by Memphis design and NeoBrutalism. Bold, playful, and accessible components for modern web applications.",
+    images: ["/memphi.webp"],
+  },
+};
 
 export default function Home() {
   return (
