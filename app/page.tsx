@@ -68,7 +68,7 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link href="/components">
+              <Link href="/docs/components/button">
                 <Button variant="outline" size="lg" shadowColor="oklch(0.6 0.2 240)">
                   Browse Components
                   <Sparkles className="w-5 h-5 ml-2" />
