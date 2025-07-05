@@ -33,80 +33,6 @@ export default function InputPage() {
               </p>
             </div>
 
-            {/* Installation Methods */}
-            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase">
-                Installation
-              </h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
-                <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
-                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
-                    <Terminal className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                    shadcn CLI (Recommended)
-                  </h3>
-                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
-                    Install the Input component using the shadcn CLI:
-                  </p>
-                  <CodeBlock
-                    title="Terminal"
-                    code="npx shadcn@latest add https://memphi.dev/r/input.json"
-                  />
-                </div>
-
-                <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
-                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
-                    <Copy className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                    Manual Installation
-                  </h3>
-                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
-                    Copy and paste the component code into your project:
-                  </p>
-                  <Link href="#manual-installation">
-                    <button className="w-full sm:w-auto px-3 py-1 bg-white border-2 border-black rounded text-sm font-bold hover:bg-retro-1 transition-colors">
-                      View Code Below
-                    </button>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="bg-retro-11 p-3 sm:p-4 border-2 border-black rounded">
-                <p className="text-black text-xs sm:text-sm">
-                  <strong>Prerequisites:</strong> Make sure you have completed the <Link href="/docs/installation" className="underline font-bold">installation setup</Link> before adding components.
-                </p>
-              </div>
-            </div>
-
-            {/* Usage Example */}
-            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase">
-                Usage
-              </h2>
-              
-              <div className="space-y-3 sm:space-y-4">
-                <CodeBlock
-                  title="Import the component"
-                  code={`import { Input } from "@/components/memphi/input"
-
-export default function Example() {
-  return (
-    <div className="space-y-4">
-      <Input placeholder="Basic input" />
-      <Input 
-        shadowColor="oklch(0.7 0.2 27.3)" 
-        placeholder="Input with shadow" 
-      />
-    </div>
-  )
-}`}
-                />
-                <OpenInV0 
-                  name="input"
-                  title="Open in"
-                />
-              </div>
-            </div>
-
             {/* Examples with Tabs */}
             <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-6 gap-3 sm:gap-0">
@@ -353,6 +279,80 @@ export default function Example() {
                     />
                   </div>
                 )}
+              </div>
+            </div>
+
+            {/* Installation Methods */}
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase">
+                Installation
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
+                <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
+                    <Terminal className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                    shadcn CLI (Recommended)
+                  </h3>
+                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
+                    Install the Input component using the shadcn CLI:
+                  </p>
+                  <CodeBlock
+                    title="Terminal"
+                    code="npx shadcn@latest add https://memphi.dev/r/input.json"
+                  />
+                </div>
+
+                <div className="bg-retro-8 p-4 sm:p-6 border-2 sm:border-4 border-black rounded-lg">
+                  <h3 className="font-bold text-black mb-2 sm:mb-3 flex items-center text-sm sm:text-base">
+                    <Copy className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                    Manual Installation
+                  </h3>
+                  <p className="text-black text-xs sm:text-sm mb-3 sm:mb-4">
+                    Copy and paste the component code into your project:
+                  </p>
+                  <Link href="#manual-installation">
+                    <button className="w-full sm:w-auto px-3 py-1 bg-white border-2 border-black rounded text-sm font-bold hover:bg-retro-1 transition-colors">
+                      View Code Below
+                    </button>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="bg-retro-11 p-3 sm:p-4 border-2 border-black rounded">
+                <p className="text-black text-xs sm:text-sm">
+                  <strong>Prerequisites:</strong> Make sure you have completed the <Link href="/docs/installation" className="underline font-bold">installation setup</Link> before adding components.
+                </p>
+              </div>
+            </div>
+
+            {/* Usage Example */}
+            <div className="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 lg:p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-6 font-sans uppercase">
+                Usage
+              </h2>
+              
+              <div className="space-y-3 sm:space-y-4">
+                <CodeBlock
+                  title="Import the component"
+                  code={`import { Input } from "@/components/memphi/input"
+
+export default function Example() {
+  return (
+    <div className="space-y-4">
+      <Input placeholder="Basic input" />
+      <Input 
+        shadowColor="oklch(0.7 0.2 27.3)" 
+        placeholder="Input with shadow" 
+      />
+    </div>
+  )
+}`}
+                />
+                <OpenInV0 
+                  name="input"
+                  title="Open in"
+                />
               </div>
             </div>
 

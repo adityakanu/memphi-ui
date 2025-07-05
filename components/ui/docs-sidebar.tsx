@@ -31,6 +31,7 @@ const navigation: NavSection[] = [
     items: [
       { title: "Button", href: "/docs/components/button" },
       { title: "Input", href: "/docs/components/input" },
+      { title: "Card", href: "/docs/components/card" },
     ],
   },
 ];
