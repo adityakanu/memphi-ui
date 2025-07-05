@@ -7,5 +7,12 @@ export const ui: Registry = [
     files: [
       "ui/button.tsx",
     ],
+  },
+  {
+    name: "input",
+    type: "registry:ui",
+    files: [
+      "ui/input.tsx",
+    ],
   }
 ];

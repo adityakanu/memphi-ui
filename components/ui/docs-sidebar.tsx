@@ -30,6 +30,7 @@ const navigation: NavSection[] = [
     title: "Components",
     items: [
       { title: "Button", href: "/docs/components/button" },
+      { title: "Input", href: "/docs/components/input" },
     ],
   },
 ];
