@@ -532,20 +532,20 @@ export default function Example() {
                   <tbody>
                     <tr>
                       <td className="border-2 border-black p-3 font-mono text-sm">variant</td>
-                      <td className="border-2 border-black p-3 text-sm">"default" | "pin" | "tilt"</td>
-                      <td className="border-2 border-black p-3 text-sm">"default"</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot; | &quot;pin&quot; | &quot;tilt&quot;</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot;</td>
                       <td className="border-2 border-black p-3 text-sm">The visual style variant</td>
                     </tr>
                     <tr className="bg-retro-11">
                       <td className="border-2 border-black p-3 font-mono text-sm">shadowColor</td>
-                      <td className="border-2 border-black p-3 text-sm">"default" | "red" | "blue" | "green" | "yellow" | "purple"</td>
-                      <td className="border-2 border-black p-3 text-sm">"default"</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot; | &quot;red&quot; | &quot;blue&quot; | &quot;green&quot; | &quot;yellow&quot; | &quot;purple&quot;</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot;</td>
                       <td className="border-2 border-black p-3 text-sm">The color of the card shadow</td>
                     </tr>
                     <tr>
                       <td className="border-2 border-black p-3 font-mono text-sm">pinColor</td>
                       <td className="border-2 border-black p-3 text-sm">string</td>
-                      <td className="border-2 border-black p-3 text-sm">"oklch(0.7 0.2 27.3)"</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;oklch(0.7 0.2 27.3)&quot;</td>
                       <td className="border-2 border-black p-3 text-sm">Color of the push pin (pin variant only)</td>
                     </tr>
                     <tr className="bg-retro-11">

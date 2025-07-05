@@ -375,14 +375,14 @@ export default function Example() {
                   <tbody>
                     <tr>
                       <td className="border-2 border-black p-3 font-mono text-sm">variant</td>
-                      <td className="border-2 border-black p-3 text-sm">"default" | "destructive" | "success" | "warning"</td>
-                      <td className="border-2 border-black p-3 text-sm">"default"</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot; | &quot;destructive&quot; | &quot;success&quot; | &quot;warning&quot;</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot;</td>
                       <td className="border-2 border-black p-3 text-sm">The visual style variant</td>
                     </tr>
                     <tr className="bg-retro-11">
                       <td className="border-2 border-black p-3 font-mono text-sm">size</td>
-                      <td className="border-2 border-black p-3 text-sm">"sm" | "default" | "lg"</td>
-                      <td className="border-2 border-black p-3 text-sm">"default"</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;sm&quot; | &quot;default&quot; | &quot;lg&quot;</td>
+                      <td className="border-2 border-black p-3 text-sm">&quot;default&quot;</td>
                       <td className="border-2 border-black p-3 text-sm">The size of the input</td>
                     </tr>
                     <tr>
